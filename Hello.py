@@ -23,10 +23,10 @@ for i in range(39):
     with tabs[i]:
         No = [i + 1]
         st.title(tab_titles[i]+" :red[_Constituency_]")
-        df_candidates = pd.read_excel(io = '/workspaces/mizoram2023/data/candidates.xlsx',
+        df_candidates = pd.read_excel(io = '/workspaces/mizoram2023/candidates.xlsx',
                                       engine='openpyxl', sheet_name='Sheet2', usecols='A:F')
 
-        df_waves = pd.read_excel(io='/workspaces/mizoram2023/data/candidates.xlsx',
+        df_waves = pd.read_excel(io='/workspaces/mizoram2023/candidates.xlsx',
                                       engine='openpyxl',sheet_name='Sheet3', usecols='A:D')
 
         hachhek=df_candidates["ID"].isin(No)
@@ -46,10 +46,10 @@ for i in range(39):
             cola, colb, colc = st.columns([1.1,0.8,3])
             with cola:
                 st.write("Symbol")
-                st.image("/workspaces/mizoram2023/data/MNF_flag_2.jpg", width = 60)
-                st.image("/workspaces/mizoram2023/data/INC_flag.jpeg", width = 60)
-                st.image("/workspaces/mizoram2023/data/ZPM_flag.jpeg", width = 60)
-                st.image("/workspaces/mizoram2023/data/BJP_flag.png", width = 60)
+                st.image("/workspaces/mizoram2023/MNF_flag_2.jpg", width = 60)
+                st.image("/workspaces/mizoram2023/INC_flag.jpeg", width = 60)
+                st.image("/workspaces/mizoram2023/ZPM_flag.jpeg", width = 60)
+                st.image("/workspaces/mizoram2023/BJP_flag.png", width = 60)
             with colb:
                 st.write("Party")
                 st.write("")
